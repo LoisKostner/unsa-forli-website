@@ -1,7 +1,8 @@
 # UNSA Forlì — Piano del sito web
 
 > **Aggiornamento v2 (redesign):** la struttura attuale è progressiva e sostituisce la mappa della sezione 2.
-> Home (hero, percorso in 3 tappe, Agenda & Communiqués) → **About**: Who we are (`about.html`), Our structure (`structure.html`) → **What we do**: panoramica (`what-we-do.html`, sostituisce `mun.html`), MUN Club, MUN Conference, The Critical Lens → **News & Events** → **Get involved** → **Contact**.
+> Menu piatto, senza tendine: **Who we are** · **What we do** · **Our structure** · **News** · **Contact** · pulsante **Get involved**.
+> Percorso "Continue": Home → Who we are → What we do → Our structure → News → Contact → Get involved. La pagina What we do elenca le 5 attività (MUN Club, MUN Conference, Talks & Seminars, Community, The Critical Lens). Le pagine di approfondimento MUN Club → MUN Conference → The Critical Lens si concatenano tra loro e l'ultima rimanda a Our structure.
 > Ogni pagina si chiude con un link "Continue" alla tappa successiva. Ogni informazione compare in una sola pagina; le altre pagine vi rimandano.
 > Stile "istituzionale-diplomatico": blu profondo, oro e avorio; titoli in Cormorant Garamond e testi in Source Sans 3; sezioni numerate come articoli; missione in forma di risoluzione ONU; motivo a meridiani ispirato all'emblema ONU; foto in grigio-blu che tornano a colori al passaggio del mouse.
 

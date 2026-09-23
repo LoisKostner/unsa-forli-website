@@ -17,40 +17,33 @@
 
   var page = document.body.getAttribute("data-page") || "";
 
-  /* ---------- Navigation ---------- */
+  /* ---------- Navigation (flat, no dropdowns) ---------- */
   var NAV = [
-    { label: "About", children: [
-      { id: "about", label: "Who we are", hint: "Mission, values and story", href: "about.html" },
-      { id: "structure", label: "Our structure", hint: "Board and departments", href: "structure.html" }
-    ] },
-    { label: "What we do", children: [
-      { id: "what-we-do", label: "Overview", hint: "All our activities", href: "what-we-do.html" },
-      { id: "mun-club", label: "MUN Club", hint: "Weekly training", href: "mun-club.html" },
-      { id: "mun-conference", label: "MUN Conference", hint: "Our yearly simulation", href: "mun-conference.html" },
-      { id: "critical-lens", label: "The Critical Lens", hint: "Student magazine", href: "critical-lens.html" }
-    ] },
-    { id: "events", label: "News & Events", href: "events.html" },
+    { id: "about", label: "Who we are", href: "about.html" },
+    { id: "what-we-do", label: "What we do", href: "what-we-do.html", also: ["mun-club", "mun-conference", "critical-lens"] },
+    { id: "structure", label: "Our structure", href: "structure.html" },
+    { id: "events", label: "News", href: "events.html", also: ["event"] },
     { id: "contact", label: "Contact", href: "contact.html" }
   ];
 
-  /* ---------- The progressive path through the site ---------- */
+  /* ---------- The progressive path through the site (follows the menu order) ---------- */
   var NEXT = {
-    "home":           { href: "about.html",          title: "Who we are",         text: "Our mission, our values and our story." },
-    "about":          { href: "structure.html",      title: "Our structure",      text: "The Board and the six departments that run UNSA." },
-    "structure":      { href: "what-we-do.html",     title: "What we do",         text: "Model UN, talks, community and our magazine." },
-    "what-we-do":     { href: "mun-club.html",       title: "The MUN Club",       text: "Where every delegate starts." },
+    "home":           { href: "about.html",          title: "Who we are",        text: "Our mission, our values and our story." },
+    "about":          { href: "what-we-do.html",     title: "What we do",        text: "MUN Club, MUN Conference, talks, community and our magazine." },
+    "what-we-do":     { href: "structure.html",      title: "Our structure",     text: "The Board and the six departments that run UNSA." },
+    "structure":      { href: "events.html",         title: "News",              text: "What's on at UNSA, and what we have done so far." },
+    "events":         { href: "contact.html",        title: "Contact",           text: "Questions, ideas or partnerships? Write to us." },
+    "contact":        { href: "get-involved.html",   title: "Get involved",      text: "Become a member, volunteer or support us." },
+    "event":          { href: "events.html",         title: "All news",          text: "Back to the agenda." },
+    /* activity detail pages: one after the other, then back on the main path */
     "mun-club":       { href: "mun-conference.html", title: "The MUN Conference", text: "Put everything into practice." },
     "mun-conference": { href: "critical-lens.html",  title: "The Critical Lens",  text: "Our student magazine on international affairs." },
-    "critical-lens":  { href: "events.html",         title: "News & Events",      text: "What's on at UNSA." },
-    "events":         { href: "get-involved.html",   title: "Get involved",       text: "Become a member, volunteer or support us." },
-    "event":          { href: "events.html",         title: "All news & events",  text: "Back to the agenda." },
-    "get-involved":   { href: "contact.html",        title: "Contact",            text: "Questions? Write to us." }
+    "critical-lens":  { href: "structure.html",      title: "Our structure",      text: "The Board and the six departments that run UNSA." }
   };
 
   function a(item) {
-    var active = item.id === page;
-    return '<a href="' + item.href + '"' + (active ? ' class="is-active" aria-current="page"' : "") + ">" + item.label +
-      (item.hint ? "<small>" + item.hint + "</small>" : "") + "</a>";
+    var active = item.id === page || (item.also || []).indexOf(page) !== -1;
+    return '<a href="' + item.href + '"' + (active ? ' class="is-active"' + (item.id === page ? ' aria-current="page"' : "") : "") + ">" + item.label + "</a>";
   }
 
   var header = document.getElementById("site-header");
@@ -71,12 +64,7 @@
         "</a>" +
         '<button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span></button>' +
         '<nav class="main-nav" id="main-nav" aria-label="Main"><ul>' +
-          NAV.map(function (item) {
-            if (!item.children) return "<li>" + a(item) + "</li>";
-            var on = item.children.some(function (c) { return c.id === page; });
-            return '<li class="nav-drop"><button type="button" aria-expanded="false"' + (on ? ' class="is-active"' : "") + ">" + item.label + "</button><ul>" +
-              item.children.map(function (c) { return "<li>" + a(c) + "</li>"; }).join("") + "</ul></li>";
-          }).join("") +
+          NAV.map(function (item) { return "<li>" + a(item) + "</li>"; }).join("") +
           '<li><a class="nav-cta" href="get-involved.html">Get involved</a></li>' +
         "</ul></nav>" +
       "</div>";
@@ -88,12 +76,6 @@
       document.body.classList.toggle("nav-open", open);
       toggle.setAttribute("aria-expanded", open);
       toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
-    });
-    header.querySelectorAll(".nav-drop > button").forEach(function (btn) {
-      btn.addEventListener("click", function () {
-        var open = btn.parentElement.classList.toggle("open");
-        btn.setAttribute("aria-expanded", open);
-      });
     });
     window.addEventListener("scroll", function () { header.classList.toggle("scrolled", window.scrollY > 10); }, { passive: true });
   }
@@ -116,12 +98,12 @@
         '<div class="footer-top">' +
           '<div class="footer-brand"><img src="assets/img/brand/unsa-emblem-white.png" alt="UNSA emblem">' +
             "<p>United Nations Student Association<br>University of Bologna — Forlì Campus</p></div>" +
-          "<div><h4>About</h4><ul>" +
+          "<div><h4>UNSA</h4><ul>" +
             '<li><a href="about.html">Who we are</a></li><li><a href="structure.html">Our structure</a></li>' +
-            '<li><a href="events.html">News &amp; Events</a></li><li><a href="contact.html">Contact</a></li></ul></div>' +
+            '<li><a href="events.html">News</a></li><li><a href="contact.html">Contact</a></li></ul></div>' +
           "<div><h4>What we do</h4><ul>" +
             '<li><a href="mun-club.html">MUN Club</a></li><li><a href="mun-conference.html">MUN Conference</a></li>' +
-            '<li><a href="what-we-do.html#talks">Talks &amp; Seminars</a></li><li><a href="critical-lens.html">The Critical Lens</a></li></ul></div>' +
+            '<li><a href="what-we-do.html#talks">Talks &amp; Seminars</a></li><li><a href="what-we-do.html#community">Community</a></li><li><a href="critical-lens.html">The Critical Lens</a></li></ul></div>' +
           "<div><h4>Get involved</h4><ul>" +
             '<li><a href="get-involved.html">Become a member</a></li><li><a href="structure.html">Volunteer</a></li>' +
             '<li><a href="get-involved.html#support">Support us</a></li>' +
