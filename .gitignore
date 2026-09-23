@@ -1,0 +1,7 @@
+# macOS / editor
+.DS_Store
+.vscode/
+
+# Original source materials received from UNSA (the site uses the optimised copies in assets/)
+/*.pdf
+/*.png

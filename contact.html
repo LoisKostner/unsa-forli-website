@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Contact — UNSA Forlì</title>
+  <meta name="description" content="Contact UNSA Forlì: email, Instagram and where to find us at the Forlì Campus of the University of Bologna.">
+  <link rel="icon" href="assets/img/brand/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="contact">
+  <header id="site-header"></header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="page-hero__bg"><img src="assets/img/photos/forli-piazza-saffi-night.jpg" alt=""></div>
+      <div class="meridians" aria-hidden="true"></div>
+      <div class="container">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span>Contact</span></nav>
+        <h1>Contact <em>us</em></h1>
+        <p>Questions, ideas or partnerships? We'd love to hear from you.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split" style="align-items:start;gap:5rem">
+        <div class="reveal">
+          <span class="label">Channels</span>
+          <h2 class="mt-1">Get in touch</h2>
+          <dl class="contact-rows mt-2">
+            <div><dt>Email</dt><dd><a data-link="email" href="#">unstudentsassociation@gmail.com</a></dd></div>
+            <div><dt>Instagram</dt><dd><a data-link="instagram" href="#" target="_blank" rel="noopener">@unsaforli</a></dd></div>
+            <div><dt>MUN Club</dt><dd><a data-link="whatsapp" href="#">WhatsApp group</a></dd></div>
+            <div><dt>Where</dt><dd>University of Bologna — Forlì Campus<br><span class="muted" style="font-size:1.1rem">Teaching Hub · Ruffilli Library</span></dd></div>
+          </dl>
+        </div>
+        <div class="reveal d1">
+          <span class="label">Write to us</span>
+          <h2 class="mt-1">Send a message</h2>
+          <form class="form mt-2" id="contact-form">
+            <div class="row">
+              <div><label for="cf-name">Name</label><input id="cf-name" name="name" required autocomplete="name"></div>
+              <div><label for="cf-email">Email</label><input id="cf-email" name="email" type="email" required autocomplete="email"></div>
+            </div>
+            <div><label for="cf-subject">Subject</label>
+              <select id="cf-subject" name="subject">
+                <option>General question</option><option>Membership</option><option>Volunteering</option>
+                <option>Partnership</option><option>The Critical Lens</option><option>Press</option>
+              </select></div>
+            <div><label for="cf-msg">Message</label><textarea id="cf-msg" name="message" rows="5" required></textarea></div>
+            <div><button class="btn btn--ink" type="submit">Send message</button></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <iframe class="map" title="Map of Forlì" loading="lazy"
+      src="https://www.openstreetmap.org/export/embed.html?bbox=12.0280%2C44.2160%2C12.0480%2C44.2270&amp;layer=mapnik&amp;marker=44.2215%2C12.0380"></iframe>
+  </main>
+
+  <footer id="site-footer"></footer>
+  <script src="js/main.js"></script>
+  <script>
+    // Without a backend, the form opens the visitor's email client with the message pre-filled.
+    document.getElementById("contact-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      var f = e.target;
+      location.href = "mailto:unstudentsassociation@gmail.com?subject=" + encodeURIComponent("[Website] " + f.subject.value) +
+        "&body=" + encodeURIComponent(f.message.value + "\n\n— " + f.name.value + " (" + f.email.value + ")");
+    });
+  </script>
+</body>
+</html>
