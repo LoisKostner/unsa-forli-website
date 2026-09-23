@@ -65,7 +65,7 @@
         '<button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span></button>' +
         '<nav class="main-nav" id="main-nav" aria-label="Main"><ul>' +
           NAV.map(function (item) { return "<li>" + a(item) + "</li>"; }).join("") +
-          '<li><a class="nav-cta" href="get-involved.html">Get involved</a></li>' +
+          '<li><a class="nav-cta" href="get-involved.html">Join UNSA</a></li>' +
         "</ul></nav>" +
       "</div>";
 
