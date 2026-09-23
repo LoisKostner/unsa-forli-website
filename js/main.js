@@ -238,7 +238,6 @@
           (it.speakers ? '<h3 class="mt-2">Speakers</h3><div class="speakers">' + it.speakers.map(function (s) {
             return '<div class="speaker"><img src="' + esc(s.photo) + '" alt="' + esc(s.name) + '" loading="lazy"><div><strong>' + esc(s.name) + "</strong><span>" + esc(s.role) + "</span></div></div>";
           }).join("") + "</div>" : "") +
-          (it.cta ? '<div class="btn-row mt-2"><a class="btn btn--gold" href="' + esc(it.cta.url) + '">' + esc(it.cta.label) + "</a></div>" : "") +
           '<p class="mt-3">' + back + "</p>" +
         "</div></div>";
     }

@@ -18,7 +18,6 @@
    summary   1–2 sentences shown on cards
    body      optional list of paragraphs shown on the detail page
    image     path to the image
-   cta       optional button: { label: "Register", url: "https://..." }
    pinned    true = always shown first among the news on the Home page
    speakers  optional list: { name, role, photo }
    ========================================================================== */
@@ -58,8 +57,7 @@ window.UNSA_NEWS = [
       "Thursday 1 October · 17:00 — Welcome Aperitivo.",
       "Saturday 3 October · 15:30 — Forlì Walking Tour, meeting point Piazza Saffi."
     ],
-    image: "assets/img/photos/forli-piazza-saffi-night.jpg",
-    cta: { label: "Follow us for updates", url: "https://www.instagram.com/unsaforli/" }
+    image: "assets/img/photos/forli-piazza-saffi-night.jpg"
   },
   {
     id: "recruiting-2026",
@@ -72,8 +70,7 @@ window.UNSA_NEWS = [
       "UNSA is run entirely by student volunteers. Whether you love diplomacy, writing, design, event planning or building partnerships, there is a place for you in one of our six departments.",
       "No previous experience is required: just motivation and curiosity. Applications are open until 15 October 2026."
     ],
-    image: "assets/img/photos/mun-delegates-lobby.jpg",
-    cta: { label: "Discover our departments", url: "structure.html" }
+    image: "assets/img/photos/mun-delegates-lobby.jpg"
   },
   {
     id: "critical-lens-call-vol2",
@@ -86,8 +83,7 @@ window.UNSA_NEWS = [
       "The Critical Lens offers students a platform to share well-researched, nuanced and thoughtful essays on the events shaping our international landscape.",
       "The theme of Volume 2 will be announced soon. Send your essay to unstudentsassociation@gmail.com by 30 November 2026."
     ],
-    image: "assets/img/flyers/critical-lens-vol1-cover.jpg",
-    cta: { label: "About The Critical Lens", url: "critical-lens.html" }
+    image: "assets/img/flyers/critical-lens-vol1-cover.jpg"
   },
   {
     id: "mun-club-2026",
@@ -103,8 +99,7 @@ window.UNSA_NEWS = [
       "The programme culminates in a final simulation, where everything learned is put into practice in a formal committee setting.",
       "Step forward. Take the floor. Make your voice count."
     ],
-    image: "assets/img/photos/mun-club-library-wide.jpg",
-    cta: { label: "Join the MUN Club", url: "mun-club.html" }
+    image: "assets/img/photos/mun-club-library-wide.jpg"
   },
 
   /* ------------------------- 2025-26 ------------------------- */
@@ -119,8 +114,7 @@ window.UNSA_NEWS = [
       "In this inaugural volume, we invited students to engage and reflect on the theme of war. The essays selected stood out for their depth, originality and analytical cut.",
       "Inside: The Olympics as a Mirror of Conflict (Greta Schoensberg), Merchants of War (Ryan Sardi), The Evolution of War and the Role of Perception of Actors Involved in Armed Conflicts (Aurora Franchini) and the report The Era of Impunity (Mariagledis Kohilamulla A.)."
     ],
-    image: "assets/img/flyers/critical-lens-vol1-cover.jpg",
-    cta: { label: "Read Volume 1 (PDF)", url: "assets/docs/the-critical-lens-vol1.pdf" }
+    image: "assets/img/flyers/critical-lens-vol1-cover.jpg"
   },
   {
     id: "mun-conference-2026",
