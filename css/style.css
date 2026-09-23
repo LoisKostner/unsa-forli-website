@@ -30,7 +30,6 @@
 html { scroll-behavior: smooth; font-variant-numeric: lining-nums; }
 body { margin: 0; font-family: var(--font); font-size: 1.22rem; font-weight: 500; line-height: 1.6; color: var(--text); background: var(--white); -webkit-font-smoothing: antialiased; }
 img { max-width: 100%; display: block; }
-button, input, select, textarea { font-family: inherit; }
 a { color: var(--blue-2); text-underline-offset: 3px; }
 a:hover { color: var(--ink); }
 h1, h2, h3, h4 { font-family: var(--font); font-weight: 600; color: var(--ink); line-height: 1.08; margin: 0 0 .5em; letter-spacing: -.005em; }
