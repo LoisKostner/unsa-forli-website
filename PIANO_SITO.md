@@ -2,7 +2,7 @@
 
 > **Aggiornamento v2 (redesign):** la struttura attuale è progressiva e sostituisce la mappa della sezione 2.
 > Menu piatto, senza tendine: **Who we are** · **What we do** · **Our structure** · **News** · **Contact** · pulsante **Get involved**.
-> Percorso "Continue": Home → Who we are → What we do → Our structure → News → Contact → Get involved. La pagina What we do elenca le 5 attività (MUN Club, MUN Conference, Talks & Seminars, Community, The Critical Lens). Le pagine di approfondimento MUN Club → MUN Conference → The Critical Lens si concatenano tra loro e l'ultima rimanda a Our structure.
+> Percorso "Continue": Home → Who we are → What we do → Our structure → News → Contact → Get involved. La pagina What we do elenca le 5 attività (MUN Club, MUN Conference, Talks & Seminars, Community, The Critical Lens). Le pagine di approfondimento (MUN Club, MUN Conference, The Critical Lens) sono isolate: si aprono solo da What we do e l'unica uscita è "Back to What we do". Anche le pagine di dettaglio delle news aperte dalla Home sono isolate e riportano solo alla Home.
 > Ogni pagina si chiude con un link "Continue" alla tappa successiva. Ogni informazione compare in una sola pagina; le altre pagine vi rimandano.
 > Stile "istituzionale-diplomatico": blu profondo, oro e avorio; titoli in Cormorant Garamond e testi in Source Sans 3; sezioni numerate come articoli; missione in forma di risoluzione ONU; motivo a meridiani ispirato all'emblema ONU; foto a colori vivaci; al passaggio del mouse si ingrandiscono e compare una cornice dorata.
 

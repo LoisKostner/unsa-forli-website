@@ -35,11 +35,7 @@
     "what-we-do":     { href: "structure.html",      title: "Our structure",     text: "The Board and the six departments that run UNSA." },
     "structure":      { href: "events.html",         title: "News",              text: "What's on at UNSA, and what we have done so far." },
     "events":         { href: "contact.html",        title: "Contact",           text: "Questions, ideas or partnerships? Write to us." },
-    "contact":        { href: "get-involved.html",   title: "Get involved",      text: "Become a member, volunteer or support us." },
-    /* activity detail pages: one after the other, then back on the main path */
-    "mun-club":       { href: "mun-conference.html", title: "The MUN Conference", text: "Put everything into practice." },
-    "mun-conference": { href: "critical-lens.html",  title: "The Critical Lens",  text: "Our student magazine on international affairs." },
-    "critical-lens":  { href: "structure.html",      title: "Our structure",      text: "The Board and the six departments that run UNSA." }
+    "contact":        { href: "get-involved.html",   title: "Get involved",      text: "Become a member, volunteer or support us." }
   };
 
   function a(item) {
@@ -81,9 +77,15 @@
     window.addEventListener("scroll", function () { header.classList.toggle("scrolled", window.scrollY > 10); }, { passive: true });
   }
 
-  /* ---------- Next chapter ---------- */
+  /* ---------- Activity pages are stand-alone: the only way out is back to What we do ---------- */
+  var BACK = { "mun-club": "#mun-club", "mun-conference": "#mun-conference", "critical-lens": "#lens" };
+
+  /* ---------- Next chapter / Back ---------- */
   var nextSlot = document.getElementById("next-chapter");
-  if (nextSlot && NEXT[page]) {
+  if (nextSlot && BACK[page]) {
+    nextSlot.outerHTML = '<a class="next next--back" href="what-we-do.html' + BACK[page] + '"><div class="container"><span class="arrow" aria-hidden="true">←</span>' +
+      '<div><span class="label">Back to</span><strong>What we do</strong><p>All our activities.</p></div></div></a>';
+  } else if (nextSlot && NEXT[page]) {
     var n = NEXT[page];
     nextSlot.outerHTML = '<a class="next" href="' + n.href + '"><div class="container"><div><span class="label">Continue</span><strong>' + n.title +
       "</strong><p>" + n.text + '</p></div><span class="arrow" aria-hidden="true">→</span></div></a>';
@@ -103,8 +105,8 @@
             '<li><a href="about.html">Who we are</a></li><li><a href="structure.html">Our structure</a></li>' +
             '<li><a href="events.html">News</a></li><li><a href="contact.html">Contact</a></li></ul></div>' +
           "<div><h4>What we do</h4><ul>" +
-            '<li><a href="mun-club.html">MUN Club</a></li><li><a href="mun-conference.html">MUN Conference</a></li>' +
-            '<li><a href="what-we-do.html#talks">Talks &amp; Seminars</a></li><li><a href="what-we-do.html#community">Community</a></li><li><a href="critical-lens.html">The Critical Lens</a></li></ul></div>' +
+            '<li><a href="what-we-do.html#mun-club">MUN Club</a></li><li><a href="what-we-do.html#mun-conference">MUN Conference</a></li>' +
+            '<li><a href="what-we-do.html#talks">Talks &amp; Seminars</a></li><li><a href="what-we-do.html#community">Community</a></li><li><a href="what-we-do.html#lens">The Critical Lens</a></li></ul></div>' +
           "<div><h4>Get involved</h4><ul>" +
             '<li><a href="get-involved.html">Become a member</a></li><li><a href="structure.html">Volunteer</a></li>' +
             '<li><a href="get-involved.html#support">Support us</a></li>' +

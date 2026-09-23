@@ -361,7 +361,7 @@ a:hover .duo::before, .duo.reveal-color:hover::before { opacity: .9; transform: 
 @media (max-width: 520px) { .team-box .people { grid-template-columns: 1fr; } }
 
 /* ---------- Programmes (what we do) ---------- */
-.programme { display: grid; grid-template-columns: 1fr 1fr; gap: 4.5rem; align-items: center; padding: 5rem 0; border-top: 1px solid var(--line); }
+.programme { scroll-margin-top: calc(var(--header-h) + 1.5rem); display: grid; grid-template-columns: 1fr 1fr; gap: 4.5rem; align-items: center; padding: 5rem 0; border-top: 1px solid var(--line); }
 .programme:first-of-type { border-top: 0; padding-top: 0; }
 .programme--flip .programme__media { order: 2; }
 .programme h3 { font-size: clamp(2rem, 3.4vw, 2.7rem); }
@@ -521,6 +521,8 @@ a:hover .duo::before, .duo.reveal-color:hover::before { opacity: .9; transform: 
 .next .arrow { width: 72px; height: 72px; border-radius: 50%; border: 1px solid var(--ink); display: grid; place-items: center; font-size: 1.6rem; color: var(--ink); flex-shrink: 0; transition: background .3s, color .3s, transform .4s var(--ease); }
 .next:hover { background: var(--stone); color: inherit; }
 .next:hover .arrow { background: var(--ink); color: var(--gold); transform: translateX(6px); }
+.next--back .container { justify-content: flex-start; }
+.next--back:hover .arrow { transform: translateX(-6px); }
 
 /* ---------- Footer ---------- */
 .site-footer { background: #070f30; color: #aab3d4; font-size: .95rem; position: relative; overflow: hidden; isolation: isolate; }
