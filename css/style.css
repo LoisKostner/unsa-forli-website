@@ -521,8 +521,7 @@ a:hover .duo::before, .duo.reveal-color:hover::before { opacity: .9; transform: 
 .next .arrow { width: 72px; height: 72px; border-radius: 50%; border: 1px solid var(--ink); display: grid; place-items: center; font-size: 1.6rem; color: var(--ink); flex-shrink: 0; transition: background .3s, color .3s, transform .4s var(--ease); }
 .next:hover { background: var(--stone); color: inherit; }
 .next:hover .arrow { background: var(--ink); color: var(--gold); transform: translateX(6px); }
-.next--back .container { justify-content: flex-start; }
-.next--back:hover .arrow { transform: translateX(-6px); }
+.back-row { padding: 3rem 0 4.5rem; }
 
 /* ---------- Footer ---------- */
 .site-footer { background: #070f30; color: #aab3d4; font-size: .95rem; position: relative; overflow: hidden; isolation: isolate; }

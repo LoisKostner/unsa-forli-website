@@ -83,8 +83,7 @@
   /* ---------- Next chapter / Back ---------- */
   var nextSlot = document.getElementById("next-chapter");
   if (nextSlot && BACK[page]) {
-    nextSlot.outerHTML = '<a class="next next--back" href="what-we-do.html' + BACK[page] + '"><div class="container"><span class="arrow" aria-hidden="true">←</span>' +
-      '<div><span class="label">Back to</span><strong>What we do</strong><p>All our activities.</p></div></div></a>';
+    nextSlot.outerHTML = '<div class="container back-row"><a class="back" href="what-we-do.html' + BACK[page] + '">Back to What we do</a></div>';
   } else if (nextSlot && NEXT[page]) {
     var n = NEXT[page];
     nextSlot.outerHTML = '<a class="next" href="' + n.href + '"><div class="container"><div><span class="label">Continue</span><strong>' + n.title +
