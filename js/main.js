@@ -16,6 +16,8 @@
   };
 
   var page = document.body.getAttribute("data-page") || "";
+  /* News detail pages opened from the Home page are stand-alone: they only lead back to the Home */
+  var fromHome = page === "event" && new URLSearchParams(location.search).get("from") === "home";
 
   /* ---------- Navigation (flat, no dropdowns) ---------- */
   var NAV = [
@@ -34,7 +36,6 @@
     "structure":      { href: "events.html",         title: "News",              text: "What's on at UNSA, and what we have done so far." },
     "events":         { href: "contact.html",        title: "Contact",           text: "Questions, ideas or partnerships? Write to us." },
     "contact":        { href: "get-involved.html",   title: "Get involved",      text: "Become a member, volunteer or support us." },
-    "event":          { href: "events.html",         title: "All news",          text: "Back to the agenda." },
     /* activity detail pages: one after the other, then back on the main path */
     "mun-club":       { href: "mun-conference.html", title: "The MUN Conference", text: "Put everything into practice." },
     "mun-conference": { href: "critical-lens.html",  title: "The Critical Lens",  text: "Our student magazine on international affairs." },
@@ -42,7 +43,7 @@
   };
 
   function a(item) {
-    var active = item.id === page || (item.also || []).indexOf(page) !== -1;
+    var active = !fromHome && (item.id === page || (item.also || []).indexOf(page) !== -1);
     return '<a href="' + item.href + '"' + (active ? ' class="is-active"' + (item.id === page ? ' aria-current="page"' : "") : "") + ">" + item.label + "</a>";
   }
 
@@ -141,7 +142,7 @@
       : s.getDate() + " " + MONTHS[s.getMonth()] + " – " + fmt(i.endDate);
   }
   function upcoming(i) { return i.type === "event" && parse(i.endDate || i.date) >= today(); }
-  function url(i) { return "event.html?id=" + encodeURIComponent(i.id); }
+  function url(i, fromHomePage) { return "event.html?id=" + encodeURIComponent(i.id) + (fromHomePage ? "&from=home" : ""); }
   function asc(a, b) { return parse(a.date) - parse(b.date); }
   function desc(a, b) { return parse(b.date) - parse(a.date); }
   function facts(i) {
@@ -151,13 +152,13 @@
 
   function agendaItem(i) {
     var d = parse(i.date);
-    return '<a class="agenda-item" href="' + url(i) + '">' +
+    return '<a class="agenda-item" href="' + url(i, true) + '">' +
       '<div class="a-date"><span class="d">' + d.getDate() + '</span><span class="m">' + MONTHS[d.getMonth()] + '</span><span class="y">' + d.getFullYear() + "</span></div>" +
       '<div><span class="cat up">' + esc(CAT[i.category] || i.category) + "</span><h4>" + esc(i.title) + "</h4>" + facts(i) + "</div>" +
       '<div class="duo"><img src="' + esc(i.image) + '" alt="" loading="lazy"></div></a>';
   }
   function communique(i) {
-    return '<a class="communique" href="' + url(i) + '"><time datetime="' + i.date + '">' + esc(fmt(i.date)) + "</time>" +
+    return '<a class="communique" href="' + url(i, true) + '"><time datetime="' + i.date + '">' + esc(fmt(i.date)) + "</time>" +
       (i.pinned ? '<span class="pin">◆</span>' : "") + "<h4>" + esc(i.title) + "</h4><p>" + esc(i.summary) + "</p></a>";
   }
   function card(i) {
@@ -214,11 +215,14 @@
     var id = new URLSearchParams(location.search).get("id");
     var it = NEWS.filter(function (i) { return i.id === id; })[0];
     if (!it) {
-      detail.innerHTML = '<div class="empty">This item could not be found. <a href="events.html">See all news &amp; events</a>.</div>';
+      detail.innerHTML = '<div class="empty">This item could not be found. <a href="' + (fromHome ? "index.html" : "events.html") + '">Go back</a>.</div>';
     } else {
       document.title = it.title + " — UNSA Forlì";
       var t = document.getElementById("event-title"); if (t) t.textContent = it.title;
       var c = document.getElementById("event-crumb"); if (c) c.textContent = CAT[it.category] || it.category;
+      var crumbs = document.getElementById("event-crumbs");
+      if (crumbs && fromHome) crumbs.innerHTML = '<a href="index.html">Home</a><span>' + esc(CAT[it.category] || it.category) + "</span>";
+      var back = fromHome ? '<a class="back" href="index.html#news">Back to Home</a>' : '<a class="back" href="events.html">Back to News</a>';
       var isUp = upcoming(it);
       detail.innerHTML = '<div class="event-detail">' +
         '<div class="event-detail__poster"><img src="' + esc(it.image) + '" alt="' + esc(it.title) + '"></div>' +
@@ -235,6 +239,7 @@
             return '<div class="speaker"><img src="' + esc(s.photo) + '" alt="' + esc(s.name) + '" loading="lazy"><div><strong>' + esc(s.name) + "</strong><span>" + esc(s.role) + "</span></div></div>";
           }).join("") + "</div>" : "") +
           (it.cta ? '<div class="btn-row mt-2"><a class="btn btn--gold" href="' + esc(it.cta.url) + '">' + esc(it.cta.label) + "</a></div>" : "") +
+          '<p class="mt-3">' + back + "</p>" +
         "</div></div>";
     }
   }
