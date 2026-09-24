@@ -22,7 +22,7 @@
   /* ---------- Navigation (flat, no dropdowns) ---------- */
   var NAV = [
     { id: "about", label: "Who we are", href: "about.html" },
-    { id: "what-we-do", label: "What we do", href: "what-we-do.html", also: ["mun-club", "mun-conference", "panels", "critical-lens"] },
+    { id: "what-we-do", label: "What we do", href: "what-we-do.html", also: ["mun-club", "mun-conference", "panels", "seminars", "critical-lens"] },
     { id: "structure", label: "Our structure", href: "structure.html" },
     { id: "events", label: "News", href: "events.html", also: ["event"] },
     { id: "contact", label: "Contact", href: "contact.html" }
@@ -78,7 +78,7 @@
   }
 
   /* ---------- Activity pages are stand-alone: the only way out is back to What we do ---------- */
-  var BACK = { "mun-club": "#mun-club", "mun-conference": "#mun-conference", "panels": "#panels", "critical-lens": "#lens" };
+  var BACK = { "mun-club": "#mun-club", "mun-conference": "#mun-conference", "panels": "#panels", "seminars": "#seminars", "critical-lens": "#lens" };
 
   /* ---------- Next chapter / Back ---------- */
   var nextSlot = document.getElementById("next-chapter");
