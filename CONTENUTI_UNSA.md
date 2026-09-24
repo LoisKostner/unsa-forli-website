@@ -1,5 +1,7 @@
 # UNSA Forlì — Base informativa per il sito web
 
+> **Aggiornamento del 24/09/2026:** le informazioni di questo documento sono state corrette e integrate da [CORREZIONI_UNSA.md](CORREZIONI_UNSA.md) (struttura Presidency e comitati, fondatrici, 40 volontari e 150 soci, conferenze semestrali, Human Rights Day). **In caso di differenze prevale CORREZIONI_UNSA.md.**
+
 > Documento di lavoro: raccoglie e riordina tutte le informazioni utili al sito, estratte dai file presenti nella cartella del progetto.
 > Ogni informazione riporta la fonte tra parentesi quadre. I punti incerti o contraddittori sono segnalati con ⚠️ e raccolti nella sezione 14.
 > Lingua dei materiali originali: **inglese** (il sito dovrà probabilmente essere in inglese, eventualmente bilingue EN/IT).

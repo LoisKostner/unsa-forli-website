@@ -1,5 +1,7 @@
 # UNSA Forlì — Piano del sito web
 
+> **Aggiornamento del 24/09/2026:** la struttura per dipartimenti proposta al §5.3 è **superata**. Il sito ora usa Presidency → Treasury e Secretariat → Academics, Communications, Socials, con l'Editorial Committee a parte. Le scelte provvisorie sono in [CORREZIONI_UNSA.md](CORREZIONI_UNSA.md) §9.
+
 > **Aggiornamento v2 (redesign):** la struttura attuale è progressiva e sostituisce la mappa della sezione 2.
 > Menu piatto, senza tendine: **Who we are** · **What we do** · **Our structure** · **News** · **Contact** · pulsante **Get involved**.
 > Percorso "Continue": Home → Who we are → What we do → Our structure → News → Contact → Get involved. La pagina What we do elenca le 5 attività (MUN Club, MUN Conference, Talks & Seminars, Community, The Critical Lens). Le pagine di approfondimento (MUN Club, MUN Conference, The Critical Lens) sono isolate: si aprono solo da What we do e l'unica uscita è "Back to What we do". Anche le pagine di dettaglio delle news aperte dalla Home sono isolate e riportano solo alla Home.

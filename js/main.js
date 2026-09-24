@@ -32,7 +32,7 @@
   var NEXT = {
     "home":           { href: "about.html",          title: "Who we are",        text: "Our mission, our values and our story." },
     "about":          { href: "what-we-do.html",     title: "What we do",        text: "MUN Club, MUN Conference, talks, community and our magazine." },
-    "what-we-do":     { href: "structure.html",      title: "Our structure",     text: "The Board and the six departments that run UNSA." },
+    "what-we-do":     { href: "structure.html",      title: "Our structure",     text: "The Presidency and the committees that run UNSA." },
     "structure":      { href: "events.html",         title: "News",              text: "What's on at UNSA, and what we have done so far." },
     "events":         { href: "contact.html",        title: "Contact",           text: "Questions, ideas or partnerships? Write to us." },
     "contact":        { href: "get-involved.html",   title: "Get involved",      text: "Become a member, volunteer or support us." }

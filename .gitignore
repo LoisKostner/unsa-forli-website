@@ -5,3 +5,6 @@
 # Original source materials received from UNSA (the site uses the optimised copies in assets/)
 /*.pdf
 /*.png
+
+# New materials received from UNSA (contain private correspondence)
+New documents/

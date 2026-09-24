@@ -63,11 +63,11 @@ window.UNSA_NEWS = [
     id: "recruiting-2026",
     type: "announcement",
     category: "Association",
-    title: "We're recruiting! Join one of our departments",
+    title: "We're recruiting! Join one of our committees",
     date: "2026-09-20",
     summary: "UNSA is looking for new volunteers — and you could be one of them! Applications are open until 15 October.",
     body: [
-      "UNSA is run entirely by student volunteers. Whether you love diplomacy, writing, design, event planning or building partnerships, there is a place for you in one of our six departments.",
+      "UNSA is run entirely by student volunteers. Whether you love diplomacy, writing, design, event planning or building partnerships, there is a place for you in one of our committees: Treasury, Secretariat, Academics, Communications, Socials or the Editorial Committee.",
       "No previous experience is required: just motivation and curiosity. Applications are open until 15 October 2026."
     ],
     image: "assets/img/photos/mun-delegates-lobby.jpg"
@@ -115,6 +115,26 @@ window.UNSA_NEWS = [
       "Inside: The Olympics as a Mirror of Conflict (Greta Schoensberg), Merchants of War (Ryan Sardi), The Evolution of War and the Role of Perception of Actors Involved in Armed Conflicts (Aurora Franchini) and the report The Era of Impunity (Mariagledis Kohilamulla A.)."
     ],
     image: "assets/img/flyers/critical-lens-vol1-cover.jpg"
+  },
+  {
+    id: "human-rights-day-2026",
+    type: "event",
+    category: "Panel",
+    title: "UNSA Human Rights Day",
+    date: "2026-05-25",
+    time: "11:00–13:00 · 15:00–18:00",
+    location: "Aula 3, Teaching Hub",
+    summary: "A panel on Rwanda and the Responsibility to Protect, and a workshop on international law and the use of force — with Prof. Lyal S. Sunga and Prof. Marco Balboni.",
+    body: [
+      "11:00–13:00 — Panel discussion: \"The Case of Rwanda — the UN and Responsibility to Protect — Never Again Genocide?\" A moderated discussion on one of the darkest moments in modern history and the international community's failure to prevent it: the role of the United Nations, international accountability and the principle of the Responsibility to Protect (R2P).",
+      "15:00–18:00 — Workshop: \"Is International Law Dead? Current Violations and the Use of Force\". Led by Lyal S. Sunga, an interactive workshop on human rights violations, armed conflicts and the use of force, closing with a debate on the future and relevance of international law.",
+      "With the contribution of the Alma Mater Studiorum – University of Bologna."
+    ],
+    image: "assets/img/flyers/human-rights-day.jpg",
+    speakers: [
+      { name: "Prof. Lyal S. Sunga", role: "Special guest — Professor at John Cabot University of Rome; former Human Rights Officer at the UN OHCHR, investigated the 1994 Rwandan genocide for the UN Security Council", photo: "assets/img/people/lyal-sunga.jpg" },
+      { name: "Prof. Marco Balboni", role: "Full Professor of International Law, University of Bologna", photo: "assets/img/people/marco-balboni.jpg" }
+    ]
   },
   {
     id: "mun-conference-2026",
