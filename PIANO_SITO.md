@@ -84,7 +84,7 @@ Serve un sistema che si possa aggiornare **senza modificare l'HTML delle pagine*
 
 ### Logica di visualizzazione
 - **Home → "Upcoming Events"**: eventi con data ≥ oggi, ordinati dal più vicino; massimo 3.
-- **Home → "Latest News"**: annunci e pubblicazioni più recenti; massimo 3. Le voci con `pinned: true` compaiono sempre per prime.
+- **Home → "Latest News"**: annunci e pubblicazioni più recenti; massimo 3. Ordine sempre dal più recente; le voci con `pinned: true` sono solo evidenziate con ◆.
 - Se non ci sono eventi futuri, compare il messaggio *"New events coming soon — follow @unsaforli"*.
 - **/events**: tutte le voci, con filtri per categoria (All · MUN · Panels & Seminars · Social · Club · Publications) e divise in "Upcoming" e "Past events" (archivio).
 - **/events/<slug>**: scheda singola con locandina, data, luogo, testo e pulsante di iscrizione.

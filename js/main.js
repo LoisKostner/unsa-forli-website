@@ -172,14 +172,14 @@
   /* Home */
   var homeAgenda = document.getElementById("home-agenda");
   if (homeAgenda) {
-    var up = NEWS.filter(upcoming).sort(asc).slice(0, 3);
+    var up = NEWS.filter(upcoming).sort(asc).slice(0, 3).reverse(); // the 3 nearest, latest on top
     homeAgenda.innerHTML = up.length ? up.map(agendaItem).join("")
       : '<div class="empty">New events coming soon — follow <a href="' + LINKS.instagram + '" target="_blank" rel="noopener">@unsaforli</a>.</div>';
   }
   var homeNews = document.getElementById("home-news");
   if (homeNews) {
     homeNews.innerHTML = NEWS.filter(function (i) { return i.type !== "event"; })
-      .sort(function (x, y) { return (y.pinned ? 1 : 0) - (x.pinned ? 1 : 0) || desc(x, y); })
+      .sort(desc)
       .slice(0, 3).map(communique).join("");
   }
 
@@ -191,7 +191,7 @@
     if (!(current in groups)) current = "all";
     var render = function () {
       var ok = function (i) { return !groups[current] || groups[current].indexOf(i.category) !== -1; };
-      var u = NEWS.filter(function (i) { return upcoming(i) && ok(i); }).sort(asc);
+      var u = NEWS.filter(function (i) { return upcoming(i) && ok(i); }).sort(desc);
       var p = NEWS.filter(function (i) { return !upcoming(i) && ok(i); }).sort(desc);
       upEl.innerHTML = u.length ? u.map(card).join("") : '<div class="empty" style="grid-column:1/-1">Nothing scheduled in this category yet — stay tuned.</div>';
       pastEl.innerHTML = p.length ? p.map(card).join("") : '<div class="empty" style="grid-column:1/-1">Nothing here yet.</div>';

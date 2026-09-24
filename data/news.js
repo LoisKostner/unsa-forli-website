@@ -18,7 +18,7 @@
    summary   1–2 sentences shown on cards
    body      optional list of paragraphs shown on the detail page
    image     path to the image
-   pinned    true = always shown first among the news on the Home page
+   pinned    true = marked with ◆ on the Home page (order is always newest first)
    speakers  optional list: { name, role, photo }
    ========================================================================== */
 
