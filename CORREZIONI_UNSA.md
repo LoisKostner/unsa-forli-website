@@ -1,6 +1,6 @@
 # UNSA Forlì — Correzioni e aggiunte al sito
 
-> Documento di lavoro che aggiorna [CONTENUTI_UNSA.md](CONTENUTI_UNSA.md) con le informazioni fornite dalla Presidenza di UNSA. **Il sito non è ancora stato modificato**: qui c'è l'elenco di cosa cambiare e dove.
+> Documento di lavoro che aggiorna [CONTENUTI_UNSA.md](CONTENUTI_UNSA.md) con le informazioni fornite dalla Presidenza di UNSA. **Applicato al sito il 24/09/2026** (compresi i panel come attività a sé in What we do). Le scelte provvisorie 🔸 restano da verificare.
 >
 > **Fonti nuove** (cartella `New documents/`):
 > - `Presentazione UNSA per Trentin.docx`: lettera di presentazione di UNSA, firmata da Alessia Minervino, Presidente. **Fonte principale.**
