@@ -225,6 +225,7 @@ Nota: la Giornata mondiale dei diritti umani ONU cade il 10 dicembre. "Human Rig
 | *Women in Diplomacy* | Confermato, *"in occasione della Giornata Internazionale della Donna"* |
 
 ### 7.3 Dove nel sito
+- **Fatto (24/09/2026):** in What we do i panel sono ora un'attività a sé, **"III · Panels"**, con la pagina isolata `panels.html` che raccoglie i quattro panel con date, luoghi, locandine e relatori. "Talks & Seminars" è diventata **"IV · Seminars & Workshops"** (Women in Diplomacy, workshop del Human Rights Day, negoziazione e public speaking, dibattiti). Le attività sono passate da 5 a 6.
 - **News → Past events:** aggiungere la voce **Human Rights Day** (§7.1). Si ordina da sola per data e compare nel filtro *Talks & Seminars*.
 - **What we do → III. Talks & Seminars:** aggiungere le chip **"Human Rights Day: The Case of Rwanda"** e **"Workshop: Is International Law Dead?"**. Nel testo, citare anche i *workshop su negoziazione e public speaking*.
 - **About → Our story so far:** la tappa **"May 2026"** diventa *"MUN Conference 2026 & Human Rights Day"*, accorpata per non allungare la timeline 🔸.

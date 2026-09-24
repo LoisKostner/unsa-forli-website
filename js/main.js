@@ -22,7 +22,7 @@
   /* ---------- Navigation (flat, no dropdowns) ---------- */
   var NAV = [
     { id: "about", label: "Who we are", href: "about.html" },
-    { id: "what-we-do", label: "What we do", href: "what-we-do.html", also: ["mun-club", "mun-conference", "critical-lens"] },
+    { id: "what-we-do", label: "What we do", href: "what-we-do.html", also: ["mun-club", "mun-conference", "panels", "critical-lens"] },
     { id: "structure", label: "Our structure", href: "structure.html" },
     { id: "events", label: "News", href: "events.html", also: ["event"] },
     { id: "contact", label: "Contact", href: "contact.html" }
@@ -31,7 +31,7 @@
   /* ---------- The progressive path through the site (follows the menu order) ---------- */
   var NEXT = {
     "home":           { href: "about.html",          title: "Who we are",        text: "Our mission, our values and our story." },
-    "about":          { href: "what-we-do.html",     title: "What we do",        text: "MUN Club, MUN Conference, talks, community and our magazine." },
+    "about":          { href: "what-we-do.html",     title: "What we do",        text: "MUN Club, MUN Conference, panels, seminars, community and our magazine." },
     "what-we-do":     { href: "structure.html",      title: "Our structure",     text: "The Presidency and the committees that run UNSA." },
     "structure":      { href: "events.html",         title: "News",              text: "What's on at UNSA, and what we have done so far." },
     "events":         { href: "contact.html",        title: "Contact",           text: "Questions, ideas or partnerships? Write to us." },
@@ -78,7 +78,7 @@
   }
 
   /* ---------- Activity pages are stand-alone: the only way out is back to What we do ---------- */
-  var BACK = { "mun-club": "#mun-club", "mun-conference": "#mun-conference", "critical-lens": "#lens" };
+  var BACK = { "mun-club": "#mun-club", "mun-conference": "#mun-conference", "panels": "#panels", "critical-lens": "#lens" };
 
   /* ---------- Next chapter / Back ---------- */
   var nextSlot = document.getElementById("next-chapter");
@@ -105,7 +105,7 @@
             '<li><a href="events.html">News</a></li><li><a href="contact.html">Contact</a></li></ul></div>' +
           "<div><h4>What we do</h4><ul>" +
             '<li><a href="what-we-do.html#mun-club">MUN Club</a></li><li><a href="what-we-do.html#mun-conference">MUN Conference</a></li>' +
-            '<li><a href="what-we-do.html#talks">Talks &amp; Seminars</a></li><li><a href="what-we-do.html#community">Community</a></li><li><a href="what-we-do.html#lens">The Critical Lens</a></li></ul></div>' +
+            '<li><a href="what-we-do.html#panels">Panels</a></li><li><a href="what-we-do.html#seminars">Seminars &amp; Workshops</a></li><li><a href="what-we-do.html#community">Community</a></li><li><a href="what-we-do.html#lens">The Critical Lens</a></li></ul></div>' +
           "<div><h4>Get involved</h4><ul>" +
             '<li><a href="get-involved.html">Become a member</a></li><li><a href="structure.html">Volunteer</a></li>' +
             '<li><a href="get-involved.html#support">Support us</a></li>' +
