@@ -9,7 +9,7 @@
 >
 > **Indicazioni dirette della Presidenza**, riportate da te:
 > - Struttura: Presidency → Treasury e Secretariat → Academics, Communications, Socials.
-> - Arianna e Candelaria sono *Founder and Former President*.
+> - Arianna è *Founder and Former President*; Candelaria Rodriguez è *Former President* (correzione del 24/09/2026: non è fondatrice).
 > - Aggiungere i panel mancanti sia in *Past events* sia in *What we do*.
 > - Editorial **non** va accanto agli altri comitati.
 >
@@ -22,7 +22,7 @@
 | # | Tema | Prima (sito / CONTENUTI) | Ora |
 |---|---|---|---|
 | 1 | Struttura | Executive Board + 6 dipartimenti inventati (MUN, Academic Affairs, Editorial, Events & Community, Communication & Media, External Relations) | **Presidency → Treasury + Secretariat → Academics, Communications, Socials.** **Editorial** a parte, fuori dalla gerarchia |
-| 2 | Fondatrici | Catalina Molin *Founder & Co-President*, Candelaria Rodriguez *Co-President* | **Arianna e Candelaria Rodriguez — Founders and Former Presidents.** Catalina Molin viene tolta 🔸 |
+| 2 | Fondatrici | Catalina Molin *Founder & Co-President*, Candelaria Rodriguez *Co-President* | **Arianna — Founder and Former President; Candelaria Rodriguez — Former President.** Catalina Molin viene tolta 🔸 |
 | 3 | Presidenza attuale | — | **Alessia Minervino, President** + un secondo posto "to be announced" 🔸 |
 | 4 | Numeri | 50+ volontari | **40 volontari attivi e 150 soci** |
 | 5 | Riconoscimento | — | **Formalmente riconosciuta dall'Università di Bologna dal 2025** |
@@ -36,7 +36,7 @@
 
 | Voce | Correzione |
 |---|---|
-| Fondatrici | ~~Catalina Molin~~ → **Arianna e Candelaria Rodriguez**, *Founders and Former Presidents*. Il cognome di Arianna non è noto: per ora solo il nome 🔸 |
+| Fondatrice | ~~Catalina Molin~~ → **Arianna**, *Founder and Former President*; **Candelaria Rodriguez** è *Former President*. Il cognome di Arianna non è noto: per ora solo il nome 🔸 |
 | Volontari attivi | ~~50~~ → **40** (la lettera dice "circa 40") |
 | Soci | **nuovo: 150** |
 | Riconoscimento | **nuovo: "Dal 2025 l'associazione è formalmente riconosciuta dall'Università di Bologna"** |
@@ -56,7 +56,7 @@ Testo proposto per About, Article 01 (in sostituzione del terzo paragrafo):
 ## 2. Chi siamo (CONTENUTI §2)
 
 - La versione estesa (§2.2) resta valida, ma va corretto il numero: *"counting with 50 active volunteers"* → **"around 40 active volunteers and 150 members"**.
-- **Firme della risoluzione "Our mission"** (pagina About): **Arianna e Candelaria Rodriguez — Founders** 🔸, al posto di Catalina Molin e Candelaria Rodriguez come co-presidenti. Motivo: la risoluzione è datata "A.D. 2024", l'anno di fondazione.
+- **Firme della risoluzione "Our mission"** (pagina About): **Arianna (Founder & Former President) e Candelaria Rodriguez (Former President)** 🔸, al posto di Catalina Molin e Candelaria Rodriguez come co-presidenti.
 
 ---
 
@@ -69,7 +69,7 @@ Testo proposto per About, Article 01 (in sostituzione del terzo paragrafo):
 | **Alessia Minervino** | **President** | Firma la lettera come "Presidente, UNSA Forlì" |
 | *To be announced* | **Vice-President** 🔸 | La Presidency è *"formata da due persone"*; la seconda non è nota |
 | **Arianna** | **Founder and Former President** | Cognome da aggiungere 🔸 |
-| **Candelaria Rodriguez** | **Founder and Former President** | — |
+| **Candelaria Rodriguez** | **Former President** | Non è fondatrice |
 | ~~Catalina Molin~~ | **Tolta dal sito** 🔸 | Nel Vol. 1 di The Critical Lens firma come "founder and co-president", ma la Presidenza indica Arianna come fondatrice |
 
 ### 3.2 Comitati (sostituisce §3.3 e tutta la proposta di dipartimenti in PIANO_SITO §5.3)
@@ -119,7 +119,7 @@ La lettera parla di *"6 comitati"* ma ne elenca 7. La lettura più coerente è *
 2. **Riquadro Editorial Committee / The Critical Lens**, separato sotto l'organigramma.
 3. **Fascia blu della Presidency:**
    - Alessia Minervino (President) e "To be announced" (Vice-President);
-   - sotto, la riga **"Founders and Former Presidents: Arianna and Candelaria Rodriguez"**.
+   - sotto, la riga **"Founder and Former Presidents"**: Arianna (Founder & Former President) e Candelaria Rodriguez (Former President).
 4. **Schede dei comitati**, nell'ordine dell'organigramma: Treasury, Secretariat, Academics, Communications, Socials. Poi una **scheda a parte per Editorial**, con il team del Vol. 1. Testi dal §3.2, al posto delle 6 schede attuali.
 5. **Numerazione:** via i numeri romani I–VI, sostituiti dal livello ("Coordination", "Committee").
 
@@ -258,7 +258,7 @@ Nota: la Giornata mondiale dei diritti umani ONU cade il 10 dicembre. "Human Rig
 | 5 | Membri dei comitati | Editorial: team del Vol. 1; altri comitati: **"Head: to be announced"** |
 | 6 | Human Rights Day | **25 maggio 2026**; workshop **15:00–18:00** |
 | 7 | Numeri in Home | **2024 Founded · 40 Volunteers · 150 Members · 3 MUN Conferences** |
-| 8 | Firme della risoluzione "Our mission" | **Arianna e Candelaria Rodriguez — Founders** |
+| 8 | Firme della risoluzione "Our mission" | **Arianna (Founder & Former President) e Candelaria Rodriguez (Former President)** |
 | 9 | Prossima MUN Conference | **"Autumn 2026 — to be announced"** |
 | 10 | Timeline About | Human Rights Day **accorpato** alla tappa di maggio 2026 |
 | 11 | MUN Club 2026-27 | Resta **giovedì 15–17, Room Dewey 999** |
@@ -279,7 +279,7 @@ La cartella `New documents/` **non è esclusa** da `.gitignore`: al prossimo com
 |---|---|
 | `.gitignore` | + `New documents/` (**per prima cosa**) |
 | `index.html` | Numeri in alto: 2024 · 40 Volunteers · 150 Members · 3 MUN Conferences; card "I. Discover": "Presidency and committees" |
-| `about.html` | Article 01: numeri, riconoscimento UniBo 2025, lingua inglese; firme della risoluzione: Arianna e Candelaria Rodriguez, Founders; timeline: + 2025 riconoscimento, maggio 2026 "MUN Conference 2026 & Human Rights Day" |
+| `about.html` | Article 01: numeri, riconoscimento UniBo 2025, lingua inglese; firme della risoluzione: Arianna (Founder & Former President) e Candelaria Rodriguez (Former President); timeline: + 2025 riconoscimento, maggio 2026 "MUN Conference 2026 & Human Rights Day" |
 | `structure.html` | **Da rifare:** organigramma Presidency → Treasury/Secretariat → Academics/Communications/Socials; riquadro Editorial separato; Presidency con Alessia Minervino + TBA; riga delle fondatrici; schede dei comitati con i testi del §3.2 + scheda Editorial a parte |
 | `what-we-do.html` | MUN Club "run by Academics"; MUN Conference "Every semester"; Talks: + Human Rights Day e workshop |
 | `mun-club.html` | Academics; position paper; simulazione finale nel Campus |
