@@ -69,25 +69,6 @@ window.UNSA_NEWS = [
     pinned: true
   },
   {
-    id: "welcome-week-2026",
-    type: "event",
-    category: "Social",
-    title: "Welcome Week 2026",
-    date: "2026-09-28",
-    endDate: "2026-10-03",
-    time: "See programme",
-    location: "Teaching Hub, Forlì Campus & Piazza Saffi",
-    summary: "Meet & Greet, Intro to MUN Club, Welcome Aperitivo and the Forlì Walking Tour: a whole week to get to know UNSA.",
-    body: [
-      "Monday 28 September · 11:00–13:00 / 15:00–17:00 — Meet & Greet at the Teaching Hub.",
-      "Tuesday 29 September · 17:00–19:00 — Intro to MUN Club.",
-      "Wednesday 30 September · 11:00–13:00 / 15:00–17:00 — Meet & Greet at the Teaching Hub.",
-      "Thursday 1 October · 17:00 — Welcome Aperitivo.",
-      "Saturday 3 October · 15:30 — Forlì Walking Tour, meeting point Piazza Saffi."
-    ],
-    image: "assets/img/photos/forli-piazza-saffi-night.jpg"
-  },
-  {
     id: "recruiting-2026",
     type: "announcement",
     category: "Association",
@@ -110,6 +91,22 @@ window.UNSA_NEWS = [
     body: [
       "The Critical Lens offers students a platform to share well-researched, nuanced and thoughtful essays on the events shaping our international landscape.",
       "From 4 November to 13 December 2026 you can send your essay for the Second Edition to unstudentsassociation@gmail.com. Theme and guidelines will be shared soon."
+    ],
+    image: "assets/img/flyers/critical-lens-vol1-cover.jpg"
+  },
+  {
+    id: "critical-lens-launch-2026",
+    type: "event",
+    category: "Publication",
+    title: "Launch party — The Critical Lens, Volume 1",
+    date: "2026-10-07",
+    time: "From 18:00",
+    location: "Flora Saffi, Forlì",
+    summary: "We celebrated the launch of the first volume of our student magazine with an afternoon of ideas, stories and good vibes.",
+    body: [
+      "The wait was over: on 7 October we celebrated the launch of the first volume of The Critical Lens, UNSA's student magazine, at Flora Saffi.",
+      "An afternoon open to all UNIBO students, with free refreshments and snacks, copies of the magazine and the chance to meet the people behind it.",
+      "Thank you to everyone who came to celebrate with us!"
     ],
     image: "assets/img/flyers/critical-lens-vol1-cover.jpg"
   },
