@@ -8,11 +8,11 @@
   var LINKS = {
     instagram: "https://www.instagram.com/unsaforli/",
     email: "unstudentsassociation@gmail.com",
-    membershipForm: "#",
+    membershipForm: "https://tr.ee/oV4U1CK4Lk",
     candidacyForm: "#",
     munClubForm: "#",
-    whatsapp: "#",
-    donate: "#"
+    whatsapp: "https://tr.ee/ovRGOIpCPw",
+    donate: "https://tr.ee/DnOcWibfiA"
   };
 
   var page = document.body.getAttribute("data-page") || "";
@@ -112,8 +112,7 @@
             '<li><a href="' + LINKS.instagram + '" target="_blank" rel="noopener">Instagram @unsaforli</a></li></ul></div>' +
         "</div>" +
         '<div class="footer-partners"><span class="label">With the support of</span>' +
-          '<span class="p">Alma Mater Studiorum – Università di Bologna</span>' +
-          '<span class="p"><img src="assets/img/brand/partner-orizzonti-politici.jpg" alt="">Orizzonti Politici</span></div>' +
+          '<span class="p">Alma Mater Studiorum – Università di Bologna</span></div>' +
         '<div class="footer-bottom"><span>© ' + new Date().getFullYear() + " UNSA Forlì · United Nations Student Association · A.D. 2024</span>" +
           '<a href="mailto:' + LINKS.email + '">' + LINKS.email + "</a></div>" +
       "</div>";
@@ -122,7 +121,10 @@
   /* ---------- Link placeholders ---------- */
   document.querySelectorAll("[data-link]").forEach(function (el) {
     var key = el.getAttribute("data-link");
-    if (LINKS[key]) el.setAttribute("href", key === "email" ? "mailto:" + LINKS.email : LINKS[key]);
+    if (LINKS[key] && LINKS[key] !== "#") {
+      el.setAttribute("href", key === "email" ? "mailto:" + LINKS.email : LINKS[key]);
+      if (/^https?:/.test(LINKS[key])) { el.setAttribute("target", "_blank"); el.setAttribute("rel", "noopener"); }
+    }
   });
 
   /* ==========================================================================
@@ -137,6 +139,7 @@
   function today() { var t = new Date(); return new Date(t.getFullYear(), t.getMonth(), t.getDate()); }
   function fmt(d) { var x = parse(d); return x.getDate() + " " + MONTHS[x.getMonth()] + " " + x.getFullYear(); }
   function fmtRange(i) {
+    if (i.dateLabel) return i.dateLabel;
     if (!i.endDate) return fmt(i.date);
     var s = parse(i.date), e = parse(i.endDate);
     return s.getMonth() === e.getMonth() ? s.getDate() + "–" + e.getDate() + " " + MONTHS[e.getMonth()] + " " + e.getFullYear()
@@ -154,7 +157,7 @@
   function agendaItem(i) {
     var d = parse(i.date);
     return '<a class="agenda-item" href="' + url(i, true) + '">' +
-      '<div class="a-date"><span class="d">' + d.getDate() + '</span><span class="m">' + MONTHS[d.getMonth()] + '</span><span class="y">' + d.getFullYear() + "</span></div>" +
+      '<div class="a-date"><span class="d">' + (i.dateLabel ? "TBD" : d.getDate()) + '</span><span class="m">' + MONTHS[d.getMonth()] + '</span><span class="y">' + d.getFullYear() + "</span></div>" +
       '<div><span class="cat up">' + esc(CAT[i.category] || i.category) + "</span><h4>" + esc(i.title) + "</h4>" + facts(i) + "</div>" +
       '<div class="duo"><img src="' + esc(i.image) + '" alt="" loading="lazy"></div></a>';
   }
