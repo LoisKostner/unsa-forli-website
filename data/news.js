@@ -26,15 +26,43 @@ window.UNSA_NEWS = [
 
   /* ------------------------- 2026-27 ------------------------- */
   {
+    id: "mun-conference-dec-2026",
+    type: "event",
+    category: "MUN",
+    title: "UNSA MUN Conference — December 2026",
+    date: "2026-12-31",            /* placeholder: replace with the real day once confirmed */
+    dateLabel: "December 2026 · date TBD",
+    location: "Forlì",
+    summary: "Our next MUN Conference will take place in December. The date will be announced soon: stay tuned!",
+    body: [
+      "A new edition of the UNSA MUN Conference is coming this December: a full day in the committee room, debating, negotiating and drafting resolutions.",
+      "Date, committees and registration details will be announced soon. Follow us on Instagram @unsaforli so you don't miss them."
+    ],
+    image: "assets/img/photos/mun-conference-room-wide.jpg"
+  },
+  {
+    id: "panels-socials-tba-2026",
+    type: "announcement",
+    category: "Association",
+    title: "New panels and social events coming soon",
+    date: "2026-10-13",
+    summary: "New panel discussions and social events are on their way. Details to be announced!",
+    body: [
+      "We are working on new panel discussions with professors and guest speakers, and on new social events to bring our community together.",
+      "Dates and details will be announced soon on this page and on Instagram @unsaforli."
+    ],
+    image: "assets/img/photos/group-photo-unsa-flag.jpg"
+  },
+  {
     id: "welcome-back-2026",
     type: "announcement",
     category: "Association",
     title: "Welcome back! UNSA 2026-27 starts now",
     date: "2026-09-15",
-    summary: "A new academic year is here: new MUN Club sessions, a new MUN Conference, panels, social events and Volume 2 of The Critical Lens. Stay tuned!",
+    summary: "A new academic year is here: new MUN Club sessions, a new MUN Conference, panels, social events and the Second Edition of The Critical Lens. Stay tuned!",
     body: [
       "Welcome back to campus! We are thrilled to start our third year of activities at the Forlì Campus of the University of Bologna.",
-      "This year we will bring back the weekly MUN Club, organise a new edition of our MUN Conference, host panel discussions with professors and guest speakers, and publish the second volume of our student magazine, The Critical Lens.",
+      "This year we will bring back the weekly MUN Club, organise a new edition of our MUN Conference, host panel discussions with professors and guest speakers, and publish the Second Edition of our student magazine, The Critical Lens.",
       "Follow us on Instagram @unsaforli so you don't miss any update. UNSA Mode is On!"
     ],
     image: "assets/img/photos/group-photo-unsa-flag.jpg",
@@ -65,10 +93,10 @@ window.UNSA_NEWS = [
     category: "Association",
     title: "We're recruiting! Join one of our committees",
     date: "2026-09-20",
-    summary: "UNSA is looking for new volunteers — and you could be one of them! Applications are open until 15 October.",
+    summary: "UNSA is looking for new volunteers — and you could be one of them! Applications for this semester are now closed and will reopen next semester.",
     body: [
       "UNSA is run entirely by student volunteers. Whether you love diplomacy, writing, design, event planning or building partnerships, there is a place for you in one of our committees: Treasury, Secretariat, Academics, Communications, Socials or the Editorial Committee.",
-      "No previous experience is required: just motivation and curiosity. Applications are open until 15 October 2026."
+      "No previous experience is required: just motivation and curiosity. Applications for this semester are now closed: they will reopen next semester, so stay tuned."
     ],
     image: "assets/img/photos/mun-delegates-lobby.jpg"
   },
@@ -76,12 +104,12 @@ window.UNSA_NEWS = [
     id: "critical-lens-call-vol2",
     type: "announcement",
     category: "Publication",
-    title: "Call for papers — The Critical Lens, Volume 2",
-    date: "2026-09-22",
-    summary: "Want to see your essay published? Submissions for the second volume of our student magazine are open until 30 November 2026.",
+    title: "Call for papers — The Critical Lens, Second Edition",
+    date: "2026-10-13",
+    summary: "Want to see your essay published? Submissions for the Second Edition of our student magazine are open from 4 November to 13 December 2026.",
     body: [
       "The Critical Lens offers students a platform to share well-researched, nuanced and thoughtful essays on the events shaping our international landscape.",
-      "The theme of Volume 2 will be announced soon. Send your essay to unstudentsassociation@gmail.com by 30 November 2026."
+      "From 4 November to 13 December 2026 you can send your essay for the Second Edition to unstudentsassociation@gmail.com. Theme and guidelines will be shared soon."
     ],
     image: "assets/img/flyers/critical-lens-vol1-cover.jpg"
   },
@@ -90,10 +118,10 @@ window.UNSA_NEWS = [
     type: "event",
     category: "Club",
     title: "MUN Club is officially back!",
-    date: "2026-10-08",
-    time: "15:00–17:00",
+    date: "2026-10-06",
+    time: "17:00–19:00",
     location: "Room Dewey 999, Ruffilli Library",
-    summary: "Our weekly MUN Club restarts: every Thursday, learn to research, debate and negotiate like a real diplomat.",
+    summary: "Our weekly MUN Club restarts: every Tuesday from 17:00 to 19:00, learn to research, debate and negotiate like a real diplomat.",
     body: [
       "The MUN Club introduces students to international diplomacy through UN simulations. Members represent countries, debate global issues, and develop negotiation and public speaking skills.",
       "The programme culminates in a final simulation, where everything learned is put into practice in a formal committee setting.",
